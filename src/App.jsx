@@ -65,7 +65,7 @@ export default function App() {
     <>
       <nav className="nav-bar">
         <div className="logo">
-          <span role="img">🍿</span>
+          <span role="img">🎬 </span>
           <h1>Movie Verdict</h1>
         </div>
         <input
