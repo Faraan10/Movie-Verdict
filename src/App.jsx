@@ -4,7 +4,6 @@ import Main from "./components/Main";
 import SearchBox from "./components/SearchBox";
 import NumResults from "./components/NumResults";
 import ListBox from "./components/ListBox";
-// import WatchedBox from "./components/WatchedBox";
 import MoviesList from "./components/MoviesList";
 import WatchedSummary from "./components/WatchedSummary";
 import WatchedMovieList from "./components/WatchedMovieList";
