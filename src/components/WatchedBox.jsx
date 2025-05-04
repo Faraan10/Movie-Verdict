@@ -24,6 +24,7 @@ const tempWatchedData = [
     userRating: 9,
   },
 ];
+
 const WatchedBox = () => {
   const [isOpen2, setIsOpen2] = useState(true);
   const [watched, setWatched] = useState(tempWatchedData);
