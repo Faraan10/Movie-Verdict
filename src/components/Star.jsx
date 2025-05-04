@@ -7,9 +7,14 @@ const starStyle = {
   cursor: "pointer",
 };
 
-const Star = ({ onRate, full }) => {
+const Star = ({ onRate, full, onHoverIn, onHoverOut }) => {
   return (
-    <span style={starStyle} onClick={onRate}>
+    <span
+      style={starStyle}
+      onClick={onRate}
+      onMouseEnter={onHoverIn}
+      onMouseLeave={onHoverOut}
+    >
       {full ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
