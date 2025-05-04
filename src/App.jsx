@@ -2,6 +2,8 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import ListBox from "./components/ListBox";
 import WatchedBox from "./components/WatchedBox";
+import SearchBox from "./components/SearchBox";
+import NumResults from "./components/NumResults";
 
 const tempMovieData = [
   {
@@ -28,12 +30,14 @@ const tempMovieData = [
 ];
 
 export default function App() {
-  const [query, setQuery] = useState("");
   const [movies, setMovies] = useState(tempMovieData);
 
   return (
     <>
-      <Navbar query={query} setQuery={setQuery} movies={movies} />
+      <Navbar>
+        <SearchBox />
+        <NumResults movies={movies} />
+      </Navbar>
       <main className="main">
         <ListBox movies={movies} />
         <WatchedBox />

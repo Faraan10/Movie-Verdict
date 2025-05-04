@@ -1,14 +1,11 @@
 import React from "react";
 import Logo from "./Logo";
-import SearchBox from "./SearchBox";
-import NumResults from "./NumResults";
 
-const Navbar = ({ query, setQuery, movies }) => {
+const Navbar = ({ children }) => {
   return (
     <nav className="nav-bar">
       <Logo />
-      <SearchBox query={query} setQuery={setQuery} />
-      <NumResults movies={movies} />
+      {children}
     </nav>
   );
 };
